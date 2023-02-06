@@ -9,7 +9,7 @@ public class Execultavel {
 		Scanner scanner = new Scanner (System.in);
 		
 		String nome = "None";
-		int ID, opcaoAdcionar;
+		int opcaoAdcionar;
 		
 		
 		do {
@@ -17,7 +17,9 @@ public class Execultavel {
 			System.out.println("       Cadastro de Alunos       ");
 			System.out.println("--------------------------------");
 			System.out.println("Selecione uma opção: ");
-			System.out.println("1 - Continuar cadastrando");
+			System.out.println("1 - Cadastro de Aluno");
+			System.out.println("2 - Excluir aluno cadastrado");
+			System.out.println("3 - Mostrar Alunos cadastrados");
 			System.out.println("0 - Sair");
 			opcaoAdcionar = scanner.nextInt();
 			
@@ -25,10 +27,18 @@ public class Execultavel {
 				
 				System.out.println("Digite o nome do aluno: ");
 				nome = scanner.next();
-				System.out.println("Digite o ID do aluno: ");
-				ID = scanner.nextInt();
 		
-				aluno.dadosAluno(nome, ID);
+				aluno.dadosAluno(nome);
+				aluno.addAluno();
+			}else if (opcaoAdcionar == 2) {
+				System.out.println("Digite o nome do Aluno: ");
+				nome = scanner.next();
+				
+				aluno.dadosAluno(nome);
+				aluno.excluirAluno();
+			}else if (opcaoAdcionar == 3) {
+				
+				aluno.mostrarAlunos();
 			}
 			
 		}while (opcaoAdcionar != 0);
