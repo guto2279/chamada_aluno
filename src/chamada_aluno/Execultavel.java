@@ -53,7 +53,7 @@ public class Execultavel {
 					opChamada = scanner.nextInt();	
 					
 					if (opChamada == 1) {
-						presenca.chamada(aluno.quantidadeAlunos());
+						presenca.chamada(aluno.listaAluno.size());
 					}
 					
 				}while(opChamada != 0);
