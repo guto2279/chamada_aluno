@@ -16,6 +16,5 @@ public class Constantes {
 	public static Integer OUTUBRO = 31;
 	public static Integer NOVEMBRO = 30;
 	public static Integer DEZEMBRO = 31;
-	
 
 }

@@ -5,9 +5,10 @@ import java.util.List;
 
 public class Aluno {
 
-	List <String> listaAluno = new ArrayList <String>();
+	private List <String> listaAluno = new ArrayList <String>();
 	
 	private String nome;
+	private int quantidadeAluno;
 	
 	public void dadosAluno (String nome){
 		this.nome = nome;
@@ -25,6 +26,11 @@ public class Aluno {
 		for (String alunos : listaAluno) {
 			System.out.println(alunos);
 		}
+	}
+	
+	public int quantidadeAlunos (){
+		return listaAluno.size();
+		
 	}
 	
 
@@ -45,7 +51,15 @@ public class Aluno {
 		this.nome = nome;
 	}
 
+	public int getQuantidadeAluno() {
+		return quantidadeAluno;
+	}
 
+	public void setQuantidadeAluno(int quantidadeAluno) {
+		this.quantidadeAluno = quantidadeAluno;
+	}
+
+	
 	
 	
 	
