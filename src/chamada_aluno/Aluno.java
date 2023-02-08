@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Aluno {
 
-	List <String> listaAluno = new ArrayList <String>();
+	List <String> listaAluno = new ArrayList<String>();
 	
 	private String nome;
 	
@@ -27,11 +27,21 @@ public class Aluno {
 		}
 	}
 	
+	public int quantidaAluno() {
+		return listaAluno.size();
+	}
+	
+	public String pegarDadosAlunos(int i) {
+		
+		String nome = listaAluno.get(i);
 
+		return nome;
+	}
 	
 	public List<String> getListaAluno() {
 		return listaAluno;
 	}
+	
 
 	public void setListaAluno(List<String> listaAluno) {
 		this.listaAluno = listaAluno;
