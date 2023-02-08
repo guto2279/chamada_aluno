@@ -4,16 +4,17 @@ public class Presenca {
 	Aluno aluno = new Aluno();
 	
 	
-	public void chamada(int totAluno) {
+	public void chamada(int totAluno) throws IndexOutOfBoundsException{
 		String[][] vChamada = new String[totAluno][31];
+		
 		
 		for (int i = 0; i < 31; i++ ) {
 			for (int j = 0; j < totAluno; j++ ) {
 				if (j == 0) {
 					vChamada[i][j] = "Aluno";
 				}else {
-					String nomeAluno= aluno.listaAluno.get(i);
-					vChamada[i][j] = nomeAluno ;
+					
+					vChamada[i][j] = aluno.getNome();;
 				
 				}
 				
@@ -23,4 +24,7 @@ public class Presenca {
 			
 		}
 	}
+
+
+	
 }
