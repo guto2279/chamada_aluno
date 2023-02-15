@@ -14,9 +14,6 @@ public class Execultavel {
 		String nome;
 		
 		do {
-			aluno.mostrarAlunos();
-			System.out.println(aluno);
-			System.out.println(presenca.aluno);
 			opcaoSistema = mostrarTela.opcaoSistema();
 			
 			if (opcaoSistema == 1) {
