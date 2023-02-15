@@ -45,7 +45,9 @@ public class MostrarTela {
 			System.out.println("1 - Chamar um aluno");
 			System.out.println("0 - Sair");
 			
+			escolha = scanner.nextInt();
 			return escolha;
+
 		}
 		
 }

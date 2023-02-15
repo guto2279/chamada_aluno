@@ -43,9 +43,8 @@ public class Execultavel {
 			}else if (opcaoSistema == 2) {
 				do {
 					
-					
-					opChamada = scanner.nextInt();	
-					
+					opChamada = mostrarTela.opcaoChamada();
+
 					if (opChamada == 1) {
 						presenca.chamada(aluno.quantidaAluno());
 					}
