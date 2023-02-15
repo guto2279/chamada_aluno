@@ -15,7 +15,6 @@ public class MostrarTela {
 			System.out.println("Selecione uma opção: ");
 			System.out.println("1 - Cadastro de Aluno");
 			System.out.println("2 - Realizar Chamadas");
-			System.out.println("3 - Calendário");
 			System.out.println("0 - Sair");
 			escolha = scanner.nextInt();
 			return escolha;
