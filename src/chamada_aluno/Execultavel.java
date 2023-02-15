@@ -6,7 +6,7 @@ public class Execultavel {
 	public static void main (String [] args) {
 		
 		Aluno aluno = new Aluno();
-		Presenca presenca = new Presenca();
+		Presenca presenca = new Presenca(aluno);
 		MostrarTela  mostrarTela = new MostrarTela();
 		Scanner scanner = new Scanner (System.in);
 	
@@ -15,12 +15,14 @@ public class Execultavel {
 		
 		do {
 			aluno.mostrarAlunos();
+			System.out.println(aluno);
+			System.out.println(presenca.aluno);
 			opcaoSistema = mostrarTela.opcaoSistema();
 			
 			if (opcaoSistema == 1) {
 				do {
 					
-					opcaoAdcionar = mostrarTela.opcaoAdicionar();;
+					opcaoAdcionar = mostrarTela.opcaoAdicionar();
 					
 					if (opcaoAdcionar == 1) {
 						
@@ -43,12 +45,7 @@ public class Execultavel {
 				}while (opcaoAdcionar != 0);
 			}else if (opcaoSistema == 2) {
 				do {
-					System.out.println("--------------------------------");
-					System.out.println("            Chamadas            ");
-					System.out.println("--------------------------------");
-					System.out.println("Selecione uma opção: ");
-					System.out.println("1 - Chamar um aluno: ");
-					System.out.println("0 - Sair");
+					
 					
 					opChamada = scanner.nextInt();	
 					
@@ -58,8 +55,6 @@ public class Execultavel {
 					
 				}while(opChamada != 0);
 			}
-			
-			
 			
 		}while (opcaoSistema != 0);
 		

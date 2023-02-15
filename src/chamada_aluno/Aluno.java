@@ -1,11 +1,10 @@
 package chamada_aluno;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Aluno {
 
-	List <String> listaAluno = new ArrayList<String>();
+	private List <String> listaAluno = new ArrayList<String>();
 	
 	private String nome;
 	
@@ -33,10 +32,12 @@ public class Aluno {
 	
 	public String pegarDadosAlunos(int i) {
 		
-		String nome = listaAluno.get(i);
-
+		String nome = this.listaAluno.get(i-1);
 		return nome;
+		
 	}
+	
+	
 	
 	public List<String> getListaAluno() {
 		return listaAluno;
@@ -55,10 +56,4 @@ public class Aluno {
 		this.nome = nome;
 	}
 
-	
-	
-	
-	
-	
-	
 }
